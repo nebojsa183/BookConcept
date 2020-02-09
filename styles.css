@@ -1,0 +1,40 @@
+.golden-background {
+    background-color: #d9b22b;
+}
+
+@font-face {
+    font-family: "h1-font";
+    src: url(dancing-script.regular.ttf);
+  }
+  
+h1{
+    font-family: "h1-font";
+}
+
+.sign-in {
+    color: #d9b22b !important;
+    background-color: black;
+    font-weight: bold;
+    width: 10vw;
+    text-align: center;
+}
+
+.log-in {
+    font-weight: bold;
+    width: 10vw;
+    text-align: center; 
+}
+
+.golden-background-nav {
+    background-color: #d9b22b;
+    width: 80%;
+}
+
+.put-inline {
+    display: inline;
+}
+
+.button-holder{ 
+    align-items: center;
+    margin:0 auto;
+}

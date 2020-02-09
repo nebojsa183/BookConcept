@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <title>Book Concept</title>
+  </head>
+  <body class = "golden-background">
+    
+    <nav class="navbar navbar-expand-lg navbar-light golden-background-nav container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#"><i class="fa fa-book"></i></a>      
+        <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo03">
+              <ul class="navbar-nav mt-2 mt-lg-0 justify-content-end">
+                <li class="nav-item active p-2">
+                  <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active p-2">
+                  <a class="nav-link" href="#">ABOUT US <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active p-2">
+                  <a class="nav-link" href="#">CONTACT <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active p-2">
+                  <a class="nav-link border rounded-pill border border-dark log-in" href="#log-in-section" id = "log-in-button-nav">LOG IN <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active p-2">
+                  <a class="nav-link rounded-pill border border-dark sign-in" id = "sign-up-button-nav" href="#sign-up-section">SIGN UP <span class="sr-only">(current)</span></a>
+                </li>
+              </ul>
+        </div>
+      </nav>
+
+      <div class = "container">
+          <section class=" d-flex justify-content-center">
+            <div class = "golden-background-nav">
+                <div style="float: inline-start;">
+                    <h1>Mauris enim tellus, finibus in enim tellus</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Ut sollicitudin, eros non bibendum condimentum, 
+                    magna nibh pretium dui, 
+                    porttitor vulputate nibh lectus ac nisi. 
+                    </p>
+                    <div>
+                      <a class="nav-link border rounded-pill border border-dark log-in" style = "display: inline;">
+                        FREE DEMO <span class="sr-only">(current)</span>
+                      </a>
+                      <a class="nav-link rounded-pill border border-dark sign-in ml-2" href="#sign-up-section" id = "sign-up-button-first-page" style="display: inline; ">
+                        SIGN UP <span class="sr-only">(current)</span>
+                      </a>
+                    </div>
+                </div>
+              </div>
+              <div>
+                <img src="girlWithBooks.png">
+              </div>
+            </div>
+          </section>
+
+          <section id= "sign-up-section" style="display: none;">
+            <div class = "golden-background-nav m-3 p-5">
+              <div>
+                <h1>Sign up</h1>
+                <form id = "sign-up-form" 
+                  oninput='pass2.setCustomValidity(pass2.value != pass1.value ? "Passwords do not match." : "")'>
+                  <div class="form-group col-md-6">
+                    <label for="firsName">First Name</label>
+                    <input type="text" class="form-control" id="first-name" required>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" class="form-control" id="last-name" required>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputEmail">Email</label>
+                    <input type="email" class="form-control" id="sign-up-email" name = "email" required>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="password1">Password</label>
+                    <input type="password" class="form-control" id="password1"  required name="pass1">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="password2">Confirm Password</label>
+                    <input type="password" class="form-control" id="password2" required name=pass2>
+                  </div>
+                  <div class ="button-holder">
+                    <button type="submit" class="btn nav-link rounded-pill border border-dark sign-in">SIGN UP</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </section>
+
+          <section id= "log-in-section" style="display: none;">
+            <div class = "golden-background-nav m-3 p-5">
+              <h1>Log in</h1>
+              <form id="log-in-form">                    
+                <div class="form-group col-md-6">
+                  <label for="inputEmail">Email</label>
+                  <input type="email" class="form-control" id="inputEmail4" name ="logInEmail" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="password">Password</label>
+                  <input type="password" class="form-control" id="password" name = "logInPassword" required>
+                </div>
+                <div class ="button-holder">
+                  <button type="submit" class="btn nav-link rounded-pill border border-dark sign-in" id = "log-in">LOG IN</button>
+                </div>
+              </form>
+            </div>
+          </section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src = "app.js"></script>
+  </body>
+</html>
